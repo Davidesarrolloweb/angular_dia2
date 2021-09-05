@@ -1,0 +1,34 @@
+
+<header>
+  <h1>Reto día 2</h1>
+</header>
+
+    <nav>
+      <a href="#" class="home">Inicio</a>
+      <a href="#" class="projects">Proyectos</a>
+      <a href="#" class="services">Servicios</a>
+      <a href="#" class="contact">Contacto</a>
+   </nav>
+
+ <main>
+   <section>
+                          <!-- AQUI EMPIEZA RETO 1 Y 2 -->
+   <article>
+          <label for="nombre">Nombre Inicial: </label>
+            <input type="texto" #input1>
+    </article>
+                      <!-- AQUI EMPIEZA RETO 3 -->
+    <article>
+    <label>Nombre actualizado: </label>
+      <input  type="text" [(ngModel)]="author1.nombre">
+    </article>
+    <article>
+      <button  (click)=enviar(input1) mat-raised-button color="primary">Mostrar Consola</button>
+    </article>
+  </section>
+ </main>
+
+<footer>
+  <p>©Copyright 2050 de David. Todos los derechos reservados.</p>
+</footer>
+
